@@ -19,7 +19,7 @@
 <body>
   <!-- navbar start -->
   <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #563d7c;">
-    <a class="navbar-brand" href="/Pet_Sitter/index.jsp">Home</a>
+    <a class="navbar-brand" href="/CA/index.jsp">Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
       aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

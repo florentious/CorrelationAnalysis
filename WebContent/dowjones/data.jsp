@@ -1,6 +1,7 @@
 
-<%@page import="kr.co.acorn.dto.BitcoinDto"%>
-<%@page import="kr.co.acorn.dao.BitcoinDao"%>
+
+<%@page import="kr.co.acorn.dto.DowJonesDto"%>
+<%@page import="kr.co.acorn.dao.DowJonesDao"%>
 <%@page import="java.util.ArrayList"%>
 <%@ page pageEncoding="utf-8" %>
 
@@ -10,10 +11,10 @@
 	int start = 0;
 	int len = 5;
 	
-	BitcoinDao bitcoinDao = BitcoinDao.getInstance();
+	DowJonesDao dowJonesDao = DowJonesDao.getInstance();
 	
-	ArrayList<BitcoinDto> bitcoinList = bitcoinDao.select();
-	int totalRows = bitcoinDao.getTotalRows();
+	ArrayList<DowJonesDto> dowJonesList = dowJonesDao.select();
+	int totalRows = dowJonesDao.getTotalRows();
 	
 %>
 
@@ -37,7 +38,7 @@
 			
 			<div class="col-sm-12">
 				<%-- wanted --%>
-				<strong>CorrelationAnalysis - Bitcoin</strong>(total : <%=totalRows %>)
+				<strong>CorrelationAnalysis - DowJones</strong>(total : <%=totalRows %>)
 				<br>
 				<div class='col-sm-12 row'>
 					<label for="startDate" class="col-sm-3 col-form-label">Start Date</label>
@@ -77,18 +78,18 @@
 					  
 							 <%
 							 
-							 if(bitcoinList.size() != 0) {
-								for(BitcoinDto bitcoinDto : bitcoinList) {
+							 if(dowJonesList.size() != 0) {
+								for(DowJonesDto dowJonesDto : dowJonesList) {
 							 
 							 %>
 						
 								    <tr>			    	
-								      <td><%=bitcoinDto.getDate() %></td>
-								      <td><%=bitcoinDto.getClose() %></td>
-								      <td><%=bitcoinDto.getOpen() %></td>								      
-								      <td><%=bitcoinDto.getHigh() %></td>
-								      <td><%=bitcoinDto.getLow() %></td>
-								      <td><%=bitcoinDto.getVolume() %></td>
+								      <td><%=dowJonesDto.getDate() %></td>
+								      <td><%=dowJonesDto.getClose() %></td>
+								      <td><%=dowJonesDto.getOpen() %></td>								      
+								      <td><%=dowJonesDto.getHigh() %></td>
+								      <td><%=dowJonesDto.getLow() %></td>
+								      <td><%=dowJonesDto.getVolume() %></td>
 								      
 								    </tr>
 							    <%
