@@ -43,13 +43,13 @@ public class CloseDao {
 			StringBuffer sql = new StringBuffer();
 			sql.append("SELECT cl_date, cl_bitcoin, cl_gold, cl_dowjones ");
 			sql.append("FROM al_close ");
-			sql.append("ORDER BY cl_date DESC ");
-			sql.append("LIMIT ?, ? ");
+//			sql.append("ORDER BY cl_date DESC ");
+//			sql.append("LIMIT ?, ? ");
 			ps = con.prepareStatement(sql.toString());
 			
 			int index = 0;
-			ps.setInt(++index, 0);
-			ps.setInt(++index, 365);
+//			ps.setInt(++index, 0);
+//			ps.setInt(++index, 365);
 			
 			
 			rs = ps.executeQuery();

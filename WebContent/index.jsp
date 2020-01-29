@@ -57,7 +57,7 @@
 		
         var options = {
    		  chart: {
-   	          title: 'Correlation Analysis for Bitcoin, Gold, DowJones'
+   	          title: 'Stock for Bitcoin, Gold, DowJones'
    	      },
    	      width: 900,
    	      height: 500,
