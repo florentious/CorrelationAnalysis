@@ -73,15 +73,15 @@
         chart.draw(data, google.charts.Line.convertOptions(options));
       }
     </script>
-
+<%--
   <!-- breadcrumb start -->
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="<%=contextPath %>/index.jsp">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Library</li>
+      <li class="breadcrumb-item active" aria-current="page">Correlation</li>
     </ol>
   </nav>
-  
+--%>
   <!-- breadcrumb end -->
   
   <!-- main start -->
@@ -90,7 +90,7 @@
       <div class="col-sm-12 row">
 			
    <%-- input content --%>
-   			
+   			<div class='col-sm-12 row'><h3>All Data Chart</h3></div>
 			<div id="line_top_x"></div>
  			<%-- input correlation analysis img data --%>
 			

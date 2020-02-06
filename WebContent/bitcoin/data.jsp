@@ -20,8 +20,8 @@
   <!-- breadcrumb start -->
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="<%=contextPath %>/index.jsp">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Library</li>
+      <li class="breadcrumb-item"><a href="<%=contextPath %>/bitcoin/info.jsp">Info</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="<%=contextPath %>/bitcoin/data.jsp">Data</a></li>
     </ol>
   </nav>
   

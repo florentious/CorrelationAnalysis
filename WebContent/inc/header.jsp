@@ -39,15 +39,15 @@
         </li>
         
         <li class="nav-item <%if(uri.startsWith("/bitcoin/")) {%>active<%} %>">
-          <a class="nav-link" href="<%=contextPath %>/bitcoin/data.jsp">Bitcoin <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="<%=contextPath %>/bitcoin/info.jsp">Bitcoin <span class="sr-only">(current)</span></a>
         </li>
         
         <li class="nav-item <%if(uri.startsWith("/gold/")) {%>active<%} %>">
-          <a class="nav-link" href="<%=contextPath %>/gold/data.jsp">Gold <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="<%=contextPath %>/gold/info.jsp">Gold <span class="sr-only">(current)</span></a>
         </li>
         
         <li class="nav-item <%if(uri.startsWith("/dowjones/")) {%>active<%} %>">
-          <a class="nav-link" href="<%=contextPath %>/dowjones/data.jsp">DowJones <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="<%=contextPath %>/dowjones/info.jsp">DowJones <span class="sr-only">(current)</span></a>
         </li>
       </ul>
         
