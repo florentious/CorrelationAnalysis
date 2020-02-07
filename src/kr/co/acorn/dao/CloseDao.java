@@ -43,8 +43,11 @@ public class CloseDao {
 			StringBuffer sql = new StringBuffer();
 			sql.append("SELECT cl_date, cl_bitcoin, cl_gold, cl_dowjones ");
 			sql.append("FROM al_close ");
-//			sql.append("ORDER BY cl_date DESC ");
-//			sql.append("LIMIT ?, ? ");
+
+			// 3년전 데이터부터 렉이 많이 걸리니까
+			sql.append("WHERE cl_date >= DATE_SUB((SELECT cl_date FROM al_close ORDER BY cl_date DESC LIMIT 0,1 ), INTERVAL 3 YEAR) ");
+			
+
 			ps = con.prepareStatement(sql.toString());
 			
 			int index = 0;

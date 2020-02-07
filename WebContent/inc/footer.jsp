@@ -6,7 +6,7 @@
   %>
   
   <!-- footer start -->
-  <br><br><br>
+  <br><br><br><br><br><br>
   <footer class="bg-dark bd-footer fixed-bottom text-muted" style="color: white; padding: 1em;">
       <div class="container-fluid text-right">
         <p>By Flo, 2020-01-22</p>
@@ -28,7 +28,7 @@
   <%
   } else {
   %>
-  <script src="/Pet_Sitter/js/jquery-3.4.1.js"></script>
+  <script src="/CA/js/jquery-3.4.1.js"></script>
   <%} %>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"

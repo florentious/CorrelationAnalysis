@@ -33,11 +33,11 @@
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        
+        <%-- 
         <li class="nav-item <%if(uri.startsWith("/analysis/")) {%>active<%} %>">
           <a class="nav-link" href="<%=contextPath %>/analysis/info.jsp">Analysis <span class="sr-only">(current)</span></a>
         </li>
-        
+         --%>
         <li class="nav-item <%if(uri.startsWith("/bitcoin/")) {%>active<%} %>">
           <a class="nav-link" href="<%=contextPath %>/bitcoin/info.jsp">Bitcoin <span class="sr-only">(current)</span></a>
         </li>
